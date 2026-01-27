@@ -30,15 +30,18 @@ class Sheet1Pattern2
 		
 		//Using 1 loop with Conditional Statement
 		System.out.println("\nUsing 1 Loops with Conditional Statement");
-		int a=1;
-		for(int i=1 ; i<=3*5 ; i++)
+		int b=5;
+		for(int i=1 ; i<=5 ; )
 		{
-			System.out.print(a+" ");
-			if( a==5 )
+			System.out.print(i%6+" ");
+			if( i==b )
 			{
-				
+				if( b==1 )return;
+				System.out.println();
+				i=0;
+				b--;
 			}
-			a++;
+			i++;
 		}
 	}
 }
