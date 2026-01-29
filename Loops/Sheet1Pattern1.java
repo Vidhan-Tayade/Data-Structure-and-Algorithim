@@ -39,13 +39,14 @@ class Sheet1Pattern1
 		//Using 1 Loops with conditional Statement 
 		System.out.println("\nUsing 1 Loops with conditional Statement");
 		int a=1;
-		for(int i=1 ; i<=5*5 ; i++)
+		for(int i=1 ; i<=5 ; )
 		{
 			System.out.print(a+" ");
 			if(a==5)
 			{
 				System.out.println();
 				a=0;
+				i++;
 			}
 			a++;
 		}
