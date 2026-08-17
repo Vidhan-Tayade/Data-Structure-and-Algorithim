@@ -1,42 +1,49 @@
 /*
-  5 4 3 2 1
-  5 4 3 2 1
-  5 4 3 2 1
-  5 4 3 2 1
-  5 4 3 2 1
+  6
+  1 6
+  1 2 6
+  1 2 3 6
+  1 2 3 4 6 
+  1 2 3 4 5 6
 */
-class Sheet1Pattern6 {
+class Sheet1Pattern10 {
 	public static void main(String args[]) {
 		
 		//Using 2 Loops
 		System.out.println("\nUsing 2 Loops :");
-		for(int i=1 ; i<=5 ; i++) {
-			for(int j=5 ; j>=1 ; j--) {
+		for(int i=0 ; i<=5 ; i++) {
+			for(int j=1 ; j<=i ; j++) {
 				System.out.print(j+" ");
 			}
-			System.out.println();
+			System.out.print(6+"\n");
 		}
+		
 		
 		//Using String with 1 Loops
 		System.out.println("\nUsing String with 1 Loops :");
-		String s="5 4 3 2 1";
+		String s="12345";
 		for(int i=1 ; i<=5 ; i++) {
-			System.out.println(s);
+			System.out.print("6\n");
+			System.out.print(s.substring(0,i) );
 		}
+		System.out.print("6\n");
+		
+		
 		
 		//Using 1 Loops with Conditional Statement
 		System.out.println("\nUsing 1 Loops with Conditional Statement :");
-		int a=5;
+		int a=1;
+		System.out.print("6\n");
 		for(int i=1 ; i<=5 ; )
 		{
 			System.out.print(a+" ");
-			if( a==1 )
+			if( a==i )
 			{
-				System.out.println();
-				a=6;
+				System.out.print(6+"\n");
+				a=0;
 				i++;
 			}
-			a--;
+			a++;
 		}
 		
 	}

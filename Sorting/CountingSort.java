@@ -1,5 +1,4 @@
 package Sorting;
-import java.util.Arrays;
 
 public class CountingSort 
 {
@@ -25,8 +24,7 @@ public class CountingSort
         }
         max++;
         int a[]=new int[max];
-        Arrays.fill(a,0);
-
+		
         //count occurance
         for(int i=0;i<n;i++)
         {
@@ -49,7 +47,7 @@ public class CountingSort
 
     }
     public static void main(String[] args) {
-        int arr[]={2,7,8,400,3,4,5,100,9};
+        int arr[]={2,7,8,-400,3,4,5,100,9};
         
         int srtArr[]=countsort(arr,arr.length);
         for(int i:srtArr)System.out.print(i+" ");
